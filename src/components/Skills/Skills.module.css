@@ -1,0 +1,80 @@
+.skill_warpper {
+    margin-top: 6.5rem;
+    background-color: #fff;
+    height: 400px;
+    overflow: hidden;
+
+    & .skill_con {
+        width: 1170px;
+        margin: auto;
+
+        & .skill_set {
+            margin-top: 2rem;
+            font-size: 1.5rem;
+            text-align: center;
+            border-bottom: 1px solid #000;
+            padding-bottom: 3rem;
+
+            & h3 {
+                color: #202020;
+            }
+        }
+
+        & .skill_logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 6rem;
+            gap: 2rem;
+            font-size: 5rem;
+            
+            & a {
+                color: #202020;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .skill_warpper {
+        height: auto !important;
+
+        & .skill_con {
+            display: flex;
+            gap: 20rem;
+            
+            & .skill_set {
+                margin-top: 20rem;
+                margin-left: 4rem;
+            }
+
+            & .skill_logo {
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .skill_warpper {
+        height: auto !important;
+        .skill_con {
+            flex-direction: column;
+            align-items: start;
+            
+            & .skill_set {
+                margin-left: 10rem !important;
+                border-color: transparent !important;
+
+                & h3 {
+                    margin-top: -15rem;
+                }
+            }
+
+            & .skill_logo {
+                margin-left: 12rem;
+                margin-top: -30rem;
+            }
+        }
+    }
+}

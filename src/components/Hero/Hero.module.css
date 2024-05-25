@@ -1,0 +1,121 @@
+.hero_warpper {
+  height: 500px;
+  overflow: hidden;
+  margin-top: 3rem;
+
+  & .hero_con {
+    width: 1170px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.255);
+    border-radius: 25px;
+  }
+
+  & .hero_info {
+    margin-top: 9rem;
+    margin-left: 3rem;
+
+    & h4 {
+      color: rgb(221, 221, 221);
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    & h1 {
+      color: #fff;
+      font-size: 4rem;
+      margin-top: -1rem;
+      font-weight: 800;
+
+      & span {
+        text-transform: uppercase;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 3px #84ff00;
+      }
+    }
+
+    & h3 {
+      margin-top: -1rem;
+      font-size: 1.5rem;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+
+    & p {
+      color: rgb(221, 221, 221);
+      line-height: 1.2rem;
+      margin-bottom: 4rem;
+    }
+
+    & ul {
+      list-style: none;
+      display: flex;
+      gap: 3rem;
+
+      & li {
+        & a {
+          font-size: 2rem;
+          color: #84ff00;
+          transition: all 0.3s ease;
+        }
+
+        & a:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  & .hero_img {
+    margin-top: 3rem;
+    margin-right: 9rem;
+
+    & img {
+      width: 400px;
+      height: 400px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .hero_warpper {
+    height: auto;
+
+    & .hero_con {
+      flex-direction: column;
+      width: 700px;
+
+      & .hero_img {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero_warpper {
+    height: 550px;
+    & .hero_con {
+      height: 550px;
+
+      & .hero_socials {
+        flex-direction: column;
+        margin-left: 22rem;
+        margin-top: -20rem;
+      }
+
+      & h1 {
+        line-height: 3.5rem;
+        margin-top: .5rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .hero_info {
+    width: 300px;
+  }
+}

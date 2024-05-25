@@ -1,0 +1,131 @@
+.contact_warpper {
+    height: 500px;
+    background-color: #84ff00;
+    overflow: hidden;
+
+    & .contact_con {
+            max-width: 1170px;
+            margin: auto;
+            margin-top: 4rem;
+            display: flex;
+            justify-content: space-between;
+
+            & .contact_info {
+                
+                & h3 {
+                    font-size: 2rem;
+                    margin-bottom: 1rem;
+                }
+
+                & .contact_decs {
+                    margin-bottom: 3rem;
+                }
+
+                & .contact_address {
+                    margin-bottom: 3rem;
+                }
+
+                & span {
+                    margin-right: 1rem;
+                }
+            }
+
+            & .contact_form {
+                width: 520px;
+
+                & label {
+                    display: block;
+                    margin: 10px 0;
+                    font-size: 14px;
+                }
+
+                & .input_group {
+                    display: flex;
+                    justify-content: space-between;
+
+                    & input[type="text"] {
+                        width: 250px;
+                        height: 40px;
+                        border-radius: 5px;
+                        padding: 15px;
+                        border: none;
+                        outline: none;
+                    }
+                }
+
+                & input[type="email"] {
+                    width: 100%;
+                    height: 40px;
+                    border-radius: 5px;
+                    padding: 15px;
+                    border: none;
+                    outline: none;
+                }
+
+                & textarea {
+                    width: 100%;
+                    height: 100px;
+                    border-radius: 5px;
+                    padding: 15px;
+                    border: none;
+                    outline: none;
+                }
+
+                & button {
+                    margin-top: 1rem;
+                    padding: .5rem 1.5rem;
+                    border-radius: 5px;
+                    background-color: #000;
+                    color: #84ff00;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                }
+
+                & button:hover {
+                    background-color: #fff;
+                    color: #000;
+                }
+            }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact_warpper {
+        height: auto !important;
+
+        & .contact_con {
+            flex-direction: column !important;
+
+            & .contact_form {
+                width: 400px;
+                margin-left: 2rem;
+                margin-bottom: 5.5rem;
+
+                & .input_group {
+                    flex-direction: column;
+
+                    & input[type="text"] {
+                        width: 100%;
+                    }
+                }
+            }
+
+            & .contact_info {
+                margin-bottom: 2rem;
+                margin-left: 2rem;
+                width: 400px;
+
+                & p {
+                    line-height: 1.4rem;
+                    margin-bottom: 1rem;
+
+                    & span {
+                        margin-right: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+footer {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & p {
+        color: #84ff00;
+    }
+}
